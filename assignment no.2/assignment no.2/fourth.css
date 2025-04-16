@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+header h1 {
+  margin: 0;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+.btn {
+  background-color: #1e90ff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container {
+  padding: 20px;
+}
+h2 {
+  font-size: 24px;
+}
+.tabs {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.tabs span {
+  cursor: pointer;
+  font-weight: bold;
+}
+.campaign-list, .actions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.campaign, .action {
+  display: flex;
+  gap: 20px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.campaign img, .action img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+}
+.campaign-content, .action-content {
+  padding: 10px;
+}
+.action-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.action-row {
+  display: flex;
+  align-items: center;
+}

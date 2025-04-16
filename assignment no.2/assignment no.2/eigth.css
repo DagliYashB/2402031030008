@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  background: #f7f8f9;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-right: 1px solid #eee;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.sidebar ul li.active {
+  background: #e9ecef;
+  font-weight: bold;
+}
+
+.new-post {
+  background: #2a88ff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sponsored {
+  font-size: 13px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.sponsored-label {
+  color: gray;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.sponsored h4 {
+  margin: 5px 0;
+}
+
+.sponsored img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.main-feed {
+  flex: 1;
+  padding: 40px;
+}
+
+.main-feed h2 {
+  margin-bottom: 20px;
+}
+
+.feed-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feed-list li {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.feed-list img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.feed-list h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.feed-list span {
+  color: gray;
+  font-size: 12px;
+}
+
+.pagination {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.pagination span {
+  padding: 6px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pagination .active-page {
+  background: #eee;
+}
